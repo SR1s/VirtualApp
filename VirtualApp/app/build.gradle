@@ -5,7 +5,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion '26.0.2'
     defaultConfig {
-        applicationId "io.virtualapp"
+        applicationId "io.virtualapp.plus"
         minSdkVersion 15
         targetSdkVersion 22
         versionCode 24
@@ -27,6 +27,12 @@ android {
     }
 
     buildTypes {
+
+        debug {
+            applicationIdSuffix ".dev"
+            versionNameSuffix "(开发版)"
+        }
+
         release {
             minifyEnabled false
         }
