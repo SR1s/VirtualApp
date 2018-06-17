@@ -137,6 +137,10 @@ public class HomeActivity extends VActivity implements HomeContract.HomeView {
             Toast.makeText(this, "The coming", Toast.LENGTH_SHORT).show();
             return false;
         });
+        menu.add("Plus").setIcon(R.drawable.ic_settings).setOnMenuItemClickListener(item -> {
+            Toast.makeText(this, "The coming", Toast.LENGTH_SHORT).show();
+            return false;
+        });
         mMenuView.setOnClickListener(v -> mPopupMenu.show());
     }
 
